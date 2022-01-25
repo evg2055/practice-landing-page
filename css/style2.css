@@ -39,12 +39,11 @@
     justify-content: space-between;
     margin-top: 50px;
     align-content: center;
-}
-.header-container__nav {
-    margin-right: 200px;
+    width: 80%;
+    margin: 40px auto;
 }
 .header-container__logo {
-    margin-left: 220px;
+    /*margin-left: 220px;*/
     font-size: 30px;
     color: rgb(195, 195, 250);
 }
