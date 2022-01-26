@@ -18,14 +18,18 @@
 .nav__li {
     margin-left: 20px;
 }
+.nav__li:first-child {
+    margin: 0;
+}
 .nav__link {
     text-decoration: none;
-    color: black;
+    color: rgb(87, 87, 87);
 }
 .logo {
     font-size: 30px;
     text-transform: capitalize;
     margin: 0px;
+    color: rgb(87, 87, 87);
 }
 .title-content {
     width: 100%;
@@ -105,4 +109,24 @@
 }
 .post__title {
     text-align: left;
+}
+/*footer*/
+.footer {
+    background-color: rgb(226, 226, 226);
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    
+}
+.footer__logo {
+    width: auto;
+    margin: 0 auto;
+
+}
+.footer__nav {
+    margin: 20px auto;
+}
+.copyright {
+    margin: 0 auto;
 }
