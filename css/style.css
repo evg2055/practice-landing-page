@@ -1,12 +1,4 @@
-/*
-* Landing Page - Practice
-* CSS Styles
-* http://www.idg.net.ua/blog/uchebnik-css/ispolzovanie-css/praktika-delaem-landing-page
-*
-*/
-
-
-/* General */
+/*global*/
 * {
     box-sizing: border-box;
 }
@@ -18,49 +10,123 @@
     color: #999;
     line-height: 1.6;
 }
-.container {
+.nav {
     display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    list-style-type: none;
+    font-size: 18px;
 }
-.brand {
+.nav__li {
+    margin-left: 20px;
+}
+.nav__li:first-child {
+    margin: 0;
+}
+.nav__link {
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+.logo {
     font-size: 30px;
+    text-transform: capitalize;
+    margin: 0px;
+    color: rgb(87, 87, 87);
 }
-.menu {
-    display: flex;
-}
-/* Header */
-.header {
-    display: flex;
-}
-.main-background__h {
-    display: block;
+.title-content {
+    width: 100%;
+    text-align: center;
 }
 
+
+/*header*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-content: center;
+    width: 80%;
+    margin: 40px auto;
+}
+.header-container__logo {
+    font-size: 30px;
+    color: rgb(195, 195, 250);
+}
+/*jumbotron*/
+.jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 250px;
+    text-align: center;
+}
+.jumbotron__title {
+    font-size: 40px;
+    color: white;
+}
+.jumbotron__button {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+    background-color: rgb(250, 91, 165);
+    padding: 20px 30px;
+    border-radius: 30px;
+}
 /* Services */
 .services {
-    justify-content: space-between;
-}
-.services__h {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 70%;
 }
 .services__service {
     width: 30%;
     padding: 30px 15px 50px;
     text-align: center;
+}
+/*blog*/
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 242, 242);
+    padding-top: 40px;
+}
+.post {
+    display: flex;
+    width: 70%;
+    margin: 40px auto;
+}
+.post__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3%;
+}
+.post__title {
+    text-align: left;
+}
+/*footer*/
+.footer {
+    background-color: rgb(226, 226, 226);
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
     
 }
-/*.services__icons {
-    color: rgb(223, 18, 18);
-}*/
+.footer__logo {
+    width: auto;
+    margin: 0 auto;
 
-/* Blog */
-
-
-
-/* Footer */
-
-
+}
+.footer__nav {
+    margin: 20px auto;
+}
+.copyright {
+    margin: 0 auto;
+}
